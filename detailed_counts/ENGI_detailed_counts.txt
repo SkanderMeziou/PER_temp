@@ -1,0 +1,96 @@
+Book :
+	 Article : 72
+	 Note : 6
+	 Conference Paper : 137
+	 Letter : 0
+	 Review : 1
+	 Editorial : 833
+	 Erratum : 2
+	 Short Survey : 0
+	 Book Chapter : 13037
+	 Report : 0
+	 Book : 1558
+	 Conference Review : 0
+	 Abstract Report : 0
+	 Retracted : 0
+	 Data Paper : 0
+Journal :
+	 Article : 260992
+	 Note : 1037
+	 Conference Paper : 13879
+	 Letter : 849
+	 Review : 7433
+	 Editorial : 2793
+	 Erratum : 895
+	 Short Survey : 592
+	 Book Chapter : 25
+	 Report : 0
+	 Book : 1
+	 Conference Review : 0
+	 Abstract Report : 2
+	 Retracted : 28
+	 Data Paper : 5
+Book Series :
+	 Article : 3764
+	 Note : 12
+	 Conference Paper : 10288
+	 Letter : 0
+	 Review : 129
+	 Editorial : 416
+	 Erratum : 4
+	 Short Survey : 0
+	 Book Chapter : 3866
+	 Report : 0
+	 Book : 2
+	 Conference Review : 0
+	 Abstract Report : 0
+	 Retracted : 0
+	 Data Paper : 0
+Report :
+	 Article : 0
+	 Note : 0
+	 Conference Paper : 0
+	 Letter : 0
+	 Review : 0
+	 Editorial : 0
+	 Erratum : 0
+	 Short Survey : 0
+	 Book Chapter : 0
+	 Report : 17
+	 Book : 0
+	 Conference Review : 0
+	 Abstract Report : 0
+	 Retracted : 0
+	 Data Paper : 0
+Trade Journal :
+	 Article : 2145
+	 Note : 56
+	 Conference Paper : 79
+	 Letter : 7
+	 Review : 481
+	 Editorial : 18
+	 Erratum : 0
+	 Short Survey : 253
+	 Book Chapter : 0
+	 Report : 1
+	 Book : 0
+	 Conference Review : 0
+	 Abstract Report : 0
+	 Retracted : 0
+	 Data Paper : 0
+Conference Proceeding :
+	 Article : 2655
+	 Note : 41
+	 Conference Paper : 187435
+	 Letter : 0
+	 Review : 75
+	 Editorial : 703
+	 Erratum : 14
+	 Short Survey : 1
+	 Book Chapter : 139
+	 Report : 0
+	 Book : 0
+	 Conference Review : 106
+	 Abstract Report : 40
+	 Retracted : 16
+	 Data Paper : 0
