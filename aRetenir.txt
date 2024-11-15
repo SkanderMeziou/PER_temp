@@ -1,2 +1,14 @@
 Cisco Web x
 feur
+
+trucs a faire : 
+
+- pouvoir faire des suggestions sur l'outil en ligne 
+    --> les femmes qui changent de nom
+    --> les homonympes 
+    --> corriger des ID ou des publicaions 
+
+- pouvoir faire des stats sur les journaux propres 
+- faire le jaccard sur mds
+- faire les jaccard pour tout 
+- comment faire la projection de mds en 2 dimentions avec plotly
