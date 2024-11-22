@@ -17,14 +17,16 @@ def jaccard_distance(set1, set2):
     jaccard_index = intersection_size / union_size
     return 1 - jaccard_index  # Distance de Jaccard
 
-# Fonction pour traiter les scores et sauvegarder dans un fichier
-def process_and_save_scores(scores, output_path):
+# Fonction pour traiter les scores et sauvegarder dans un fichier avec des détails supplémentaires
+def process_and_save_scores(scores, output_path, csv_filename, num_journals):
     scores.sort(key=lambda x: x[2])
     closest_pair = scores[0]
     farthest_pair = scores[-1]
     avg_distance = sum(d[2] for d in scores) / len(scores)
     
     with open(output_path, 'a') as f:
+        f.write(f"Fichier CSV traité : {csv_filename}\n")
+        f.write(f"Nombre de journaux : {num_journals}\n")
         f.write(f"Les deux journaux les plus proches : {closest_pair[0]} et {closest_pair[1]} avec une distance de {closest_pair[2]:.4f}\n")
         f.write(f"Les deux journaux les plus éloignés : {farthest_pair[0]} et {farthest_pair[1]} avec une distance de {farthest_pair[2]:.4f}\n")
         f.write(f"Distance moyenne entre les journaux : {avg_distance:.4f}\n")
@@ -44,30 +46,32 @@ def analyze_and_save_results(directory, output_path):
             
             issn_authors_map = get_authors_by_issn(df)
             issn_list = list(issn_authors_map.keys())
+            num_journals = len(issn_list)
             
             scores = []
-            total_comparisons = len(issn_list) * (len(issn_list) - 1) // 2
+            total_comparisons = num_journals * (num_journals - 1) // 2
             print(f"Nombre total de comparaisons à effectuer : {total_comparisons}")
             
             count = 0
-            for i in range(len(issn_list)):
+            for i in range(num_journals):
                 if i % 10 == 0:  # Afficher un log toutes les 10 itérations
-                    print(f"Progression : {i} / {len(issn_list)}")
+                    print(f"Progression : {i} / {num_journals}")
                 
-                for j in range(i + 1, len(issn_list)):
+                for j in range(i + 1, num_journals):
                     issn1 = issn_list[i]
                     issn2 = issn_list[j]
                     distance = jaccard_distance(issn_authors_map[issn1], issn_authors_map[issn2])
                     scores.append((issn1, issn2, distance))
                     
                     count += 1
-                    if count % 50000 == 0:  # Afficher un log toutes les 1000 comparaisons
+                    if count % 50000 == 0:  # Afficher un log toutes les 50 000 comparaisons
                         print(f"Comparaisons effectuées : {count} / {total_comparisons}")
             
             print("Comparaisons terminées.")
-            process_and_save_scores(scores, output_path)
+            process_and_save_scores(scores, output_path, filename, num_journals)
 
 # Appel de la fonction pour traiter tous les fichiers CSV dans le dossier spécifié
 directory = './data/cleanScopus'
 output_path = './detailed_counts/jaccard_distances.txt'
 analyze_and_save_results(directory, output_path)
+

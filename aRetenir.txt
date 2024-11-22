@@ -12,3 +12,17 @@ trucs a faire :
 - faire le jaccard sur mds
 - faire les jaccard pour tout 
 - comment faire la projection de mds en 2 dimentions avec plotly
+
+temps avec sklearn :  02:47 pour 3000 comparaisons sur deux millions
+temps implementé seul : les deux million ont été realisée en deux minutes 
+
+-faire les pourcentages pour ce qui n'es pas un journal/ article 
+- enlever l'issn 03029743
+- essayer les deux jaccard index sur des petis exemples
+- faire l'embedding pour une discipline ( comp )
+- ajouter la discipline et recacluler la distance de jaccard 
+- connaitre le nombre de publications dans chaque journal ( 0 , 1 ,2 ,etc )
+- enlever les journaux avec que 1 ou 2 publications peut etre
+
+observations : 
+les deux journaux 

@@ -4,7 +4,7 @@ from sklearn.metrics import jaccard_score
 from sklearn.preprocessing import MultiLabelBinarizer
 
 # Charger le CSV
-df = pd.read_csv('./data/scopus/COMP.csv')  # Remplace par ton fichier réel
+df = pd.read_csv('./data/cleanScopus/COMP.csv')  # Remplace par ton fichier réel
 print("initializing..")
 
 # Fonction pour obtenir la liste des auteurs pour chaque ISSN

@@ -1,123 +1,187 @@
+Fichier CSV traité : clean_AGRI.csv
+Nombre de journaux : 2262
 Les deux journaux les plus proches : 01008358 et 01013122 avec une distance de 0.5000
 Les deux journaux les plus éloignés : 87559129 et 8756971X avec une distance de 1.0000
 Distance moyenne entre les journaux : 0.9995
 Nombre total de comparaisons : 2557191
 
+Fichier CSV traité : clean_ARTS.csv
+Nombre de journaux : 3670
 Les deux journaux les plus proches : 00060623 et 16099982 avec une distance de 0.0000
 Les deux journaux les plus éloignés : 87554178 et 87566583 avec une distance de 1.0000
 Distance moyenne entre les journaux : 0.9999
 Nombre total de comparaisons : 6732615
 
+Fichier CSV traité : clean_BIOC.csv
+Nombre de journaux : 2411
 Les deux journaux les plus proches : 16076524 et 16082222 avec une distance de 0.0000
 Les deux journaux les plus éloignés : 87555093 et 87567938 avec une distance de 1.0000
 Distance moyenne entre les journaux : 0.9992
 Nombre total de comparaisons : 2905255
 
+Fichier CSV traité : clean_BUSI.csv
+Nombre de journaux : 1369
 Les deux journaux les plus proches : 02102412 et 11384891 avec une distance de 0.5000
 Les deux journaux les plus éloignés : 87566222 et 87569728 avec une distance de 1.0000
 Distance moyenne entre les journaux : 0.9995
 Nombre total de comparaisons : 936396
 
+Fichier CSV traité : clean_CENG.csv
+Nombre de journaux : 697
 Les deux journaux les plus proches : 10039015 et 10059954 avec une distance de 0.5625
 Les deux journaux les plus éloignés : 3346447 et 87559129 avec une distance de 1.0000
 Distance moyenne entre les journaux : 0.9991
 Nombre total de comparaisons : 242556
 
+Fichier CSV traité : clean_COMP.csv
+Nombre de journaux : 1739
 Les deux journaux les plus proches : 10637109 et 10816011 avec une distance de 0.0000
 Les deux journaux les plus éloignés : 87566621 et 8756663X avec une distance de 1.0000
 Distance moyenne entre les journaux : 0.9993
 Nombre total de comparaisons : 1511191
 
+Fichier CSV traité : clean_DECI.csv
+Nombre de journaux : 392
 Les deux journaux les plus proches : 09727671 et 0976836X avec une distance de 0.6375
 Les deux journaux les plus éloignés : 26661888 et 7653697 avec une distance de 1.0000
 Distance moyenne entre les journaux : 0.9987
 Nombre total de comparaisons : 76636
 
+Fichier CSV traité : clean_DENT.csv
+Nombre de journaux : 194
 Les deux journaux les plus proches : 00264970 et 09264970 avec une distance de 0.5238
 Les deux journaux les plus éloignés : 27849015 et 87502186 avec une distance de 1.0000
 Distance moyenne entre les journaux : 0.9969
 Nombre total de comparaisons : 18721
 
+Fichier CSV traité : clean_EART.csv
+Nombre de journaux : 1438
 Les deux journaux les plus proches : 10011749 et 10059539 avec une distance de 0.3333
 Les deux journaux les plus éloignés : 87556839 et 8755724X avec une distance de 1.0000
 Distance moyenne entre les journaux : 0.9993
 Nombre total de comparaisons : 1033203
 
+Fichier CSV traité : clean_ECON.csv
+Nombre de journaux : 1075
 Les deux journaux les plus proches : 22543295 et 26604647 avec une distance de 0.5000
 Les deux journaux les plus éloignés : 27888614 et 87566222 avec une distance de 1.0000
 Distance moyenne entre les journaux : 0.9991
 Nombre total de comparaisons : 577275
 
+Fichier CSV traité : clean_ENER.csv
+Nombre de journaux : 462
 Les deux journaux les plus proches : 03854213 et 04247760 avec une distance de 0.3846
 Les deux journaux les plus éloignés : 27888614 et 29499097 avec une distance de 1.0000
 Distance moyenne entre les journaux : 0.9993
 Nombre total de comparaisons : 106491
 
+Fichier CSV traité : clean_ENGI.csv
+Nombre de journaux : 3325
 Les deux journaux les plus proches : 03854213 et 04247760 avec une distance de 0.3846
 Les deux journaux les plus éloignés : 87566990 et 8756758X avec une distance de 1.0000
 Distance moyenne entre les journaux : 0.9996
 Nombre total de comparaisons : 5526150
 
+Fichier CSV traité : clean_ENVI.csv
+Nombre de journaux : 1628
 Les deux journaux les plus proches : 03045250 et 13352555 avec une distance de 0.7500
 Les deux journaux les plus éloignés : 27998746 et 8755724X avec une distance de 1.0000
 Distance moyenne entre les journaux : 0.9996
 Nombre total de comparaisons : 1324378
 
+Fichier CSV traité : clean_HEAL.csv
+Nombre de journaux : 470
 Les deux journaux les plus proches : 02735024 et 1356336X avec une distance de 0.7931
 Les deux journaux les plus éloignés : 2734844X et 87507315 avec une distance de 1.0000
 Distance moyenne entre les journaux : 0.9994
 Nombre total de comparaisons : 110215
 
+Fichier CSV traité : clean_IMMU.csv
+Nombre de journaux : 706
 Les deux journaux les plus proches : 00354082 et 10180532 avec une distance de 0.6667
 Les deux journaux les plus éloignés : 27705986 et 87558920 avec une distance de 1.0000
 Distance moyenne entre les journaux : 0.9986
 Nombre total de comparaisons : 248865
 
+Fichier CSV traité : clean_MATE.csv
+Nombre de journaux : 1302
 Les deux journaux les plus proches : 09151168 et 10457828 avec une distance de 0.4737
 Les deux journaux les plus éloignés : 87560879 et 8756758X avec une distance de 1.0000
 Distance moyenne entre les journaux : 0.9988
 Nombre total de comparaisons : 846951
 
+Fichier CSV traité : clean_MATH.csv
+Nombre de journaux : 1577
 Les deux journaux les plus proches : 00255742 et 20759827 avec une distance de 0.5000
 Les deux journaux les plus éloignés : 28363310 et 87550024 avec une distance de 1.0000
 Distance moyenne entre les journaux : 0.9987
 Nombre total de comparaisons : 1242676
 
+Fichier CSV traité : clean_MULT.csv
+Nombre de journaux : 119
 Les deux journaux les plus proches : 00280836 et 00368075 avec une distance de 0.8683
 Les deux journaux les plus éloignés : 27089967 et 27668509 avec une distance de 1.0000
 Distance moyenne entre les journaux : 0.9996
 Nombre total de comparaisons : 7021
 
+Fichier CSV traité : clean_NEUR.csv
+Nombre de journaux : 608
 Les deux journaux les plus proches : 10196099 et 1028768X avec une distance de 0.5000
 Les deux journaux les plus éloignés : 26895293 et 3341763 avec une distance de 1.0000
 Distance moyenne entre les journaux : 0.9981
 Nombre total de comparaisons : 184528
 
+Fichier CSV traité : clean_NURS.csv
+Nombre de journaux : 541
 Les deux journaux les plus proches : 01679228 et 08904065 avec une distance de 0.5000
 Les deux journaux les plus éloignés : 87564610 et 87568160 avec une distance de 1.0000
 Distance moyenne entre les journaux : 0.9995
 Nombre total de comparaisons : 146070
 
+Fichier CSV traité : clean_PHAR.csv
+Nombre de journaux : 905
 Les deux journaux les plus proches : 1521298X et 15309932 avec une distance de 0.6237
 Les deux journaux les plus éloignés : 87551225 et 87563320 avec une distance de 1.0000
 Distance moyenne entre les journaux : 0.9992
 Nombre total de comparaisons : 409060
 
+Fichier CSV traité : clean_PHYS.csv
+Nombre de journaux : 1290
 Les deux journaux les plus proches : 01326414 et 1063777X avec une distance de 0.2485
 Les deux journaux les plus éloignés : 8756663X et 87566990 avec une distance de 1.0000
 Distance moyenne entre les journaux : 0.9987
 Nombre total de comparaisons : 831405
 
+
+Fichier CSV traité : clean_PSYC.csv
+Nombre de journaux : 1097
 Les deux journaux les plus proches : 00220655 et 08957347 avec une distance de 0.3333
 Les deux journaux les plus éloignés : 87564610 et 87565641 avec une distance de 1.0000
 Distance moyenne entre les journaux : 0.9990
 Nombre total de comparaisons : 601156
 
+Fichier CSV traité : clean_SOCI.csv
+Nombre de journaux : 5591
 Les deux journaux les plus proches : 00132004 et 14778785 avec une distance de 0.0000
 Les deux journaux les plus éloignés : 87567555 et 9749284 avec une distance de 1.0000
 Distance moyenne entre les journaux : 0.9999
 Nombre total de comparaisons : 15626845
 
+Fichier CSV traité : clean_VETE.csv
+Nombre de journaux : 253
+Les deux journaux les plus proches : 00471917 et 03676722 avec une distance de 0.8000
+Les deux journaux les plus éloignés : 7653697 et 87507943 avec une distance de 1.0000
+Distance moyenne entre les journaux : 0.9981
+Nombre total de comparaisons : 31878
+Fichier CSV traité : clean_SOCI.csv
+Nombre de journaux : 5591
+Les deux journaux les plus proches : 00132004 et 14778785 avec une distance de 0.0000
+Les deux journaux les plus éloignés : 87567555 et 9749284 avec une distance de 1.0000
+Distance moyenne entre les journaux : 0.9999
+Nombre total de comparaisons : 15626845
+
+Fichier CSV traité : clean_VETE.csv
+Nombre de journaux : 253
 Les deux journaux les plus proches : 00471917 et 03676722 avec une distance de 0.8000
 Les deux journaux les plus éloignés : 7653697 et 87507943 avec une distance de 1.0000
 Distance moyenne entre les journaux : 0.9981
