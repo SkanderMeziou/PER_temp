@@ -1,5 +1,4 @@
 import pandas as pd
-import random
 from sklearn.metrics import jaccard_score
 from sklearn.preprocessing import MultiLabelBinarizer
 

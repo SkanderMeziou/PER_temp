@@ -24,7 +24,7 @@ def process_and_save_scores(scores, output_path, csv_filename, num_journals):
     farthest_pair = scores[-1]
     avg_distance = sum(d[2] for d in scores) / len(scores)
     
-    with open(output_path, 'a') as f:
+    with open(output_path, 'a', encoding="utf8") as f:
         f.write(f"Fichier CSV traité : {csv_filename}\n")
         f.write(f"Nombre de journaux : {num_journals}\n")
         f.write(f"Les deux journaux les plus proches : {closest_pair[0]} et {closest_pair[1]} avec une distance de {closest_pair[2]:.4f}\n")

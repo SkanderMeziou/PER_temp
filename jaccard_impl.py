@@ -1,7 +1,6 @@
-import pandas as pd
 import random
-from sklearn.metrics import jaccard_score
-from sklearn.preprocessing import MultiLabelBinarizer
+
+import pandas as pd
 
 # Charger le CSV
 df = pd.read_csv('./data/scopus/PHYS.csv')  # Remplace par ton fichier réel
