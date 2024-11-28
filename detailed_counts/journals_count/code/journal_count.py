@@ -4,7 +4,7 @@ import pandas as pd
 with open("journals_count.csv", 'w') as f:
     f.write('discipline,nb_journals\n')
 nb_journals = 0
-for filename in os.listdir("./"):
+for filename in os.listdir("../"):
     if filename.endswith('.csv') and filename != "journals_count.csv":
         df = pd.read_csv(filename)
         discipline = filename.split('.')[0].split('_')[1]
