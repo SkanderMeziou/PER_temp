@@ -1,0 +1,83 @@
+
+    <html>
+    <head>
+        <title>Full output</title>
+        <base href="..">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            /* display div as sticky bar on top */
+            div {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                overflow-y: scroll;
+                    width: 120pt;
+            }
+            /* style the buttons */
+            button {
+                font-size: 1.5em;
+                width: 100%;
+                text-align: center;
+            }
+            iframe {
+                border: none;
+                flex-grow: 1;
+            }
+            body {
+                display: flex;
+                flex-direction: row;
+            }
+            
+            button.active {
+                background-color: grey;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+    <a href="full_output/AGRI.csv_full.html" target="content"><button>AGRI</button></a>
+<a href="full_output/ARTS.csv_full.html" target="content"><button>ARTS</button></a>
+<a href="full_output/BIOC.csv_full.html" target="content"><button>BIOC</button></a>
+<a href="full_output/BUSI.csv_full.html" target="content"><button>BUSI</button></a>
+<a href="full_output/CENG.csv_full.html" target="content"><button>CENG</button></a>
+<a href="full_output/COMP.csv_full.html" target="content"><button>COMP</button></a>
+<a href="full_output/DECI.csv_full.html" target="content"><button>DECI</button></a>
+<a href="full_output/DENT.csv_full.html" target="content"><button>DENT</button></a>
+<a href="full_output/EART.csv_full.html" target="content"><button>EART</button></a>
+<a href="full_output/ECON.csv_full.html" target="content"><button>ECON</button></a>
+<a href="full_output/ENER.csv_full.html" target="content"><button>ENER</button></a>
+<a href="full_output/ENGI.csv_full.html" target="content"><button>ENGI</button></a>
+<a href="full_output/ENVI.csv_full.html" target="content"><button>ENVI</button></a>
+<a href="full_output/HEAL.csv_full.html" target="content"><button>HEAL</button></a>
+<a href="full_output/IMMU.csv_full.html" target="content"><button>IMMU</button></a>
+<a href="full_output/MATE.csv_full.html" target="content"><button>MATE</button></a>
+<a href="full_output/MATH.csv_full.html" target="content"><button>MATH</button></a>
+<a href="full_output/MEDI.csv_full.html" target="content"><button>MEDI</button></a>
+<a href="full_output/MULT.csv_full.html" target="content"><button>MULT</button></a>
+<a href="full_output/NEUR.csv_full.html" target="content"><button>NEUR</button></a>
+<a href="full_output/NURS.csv_full.html" target="content"><button>NURS</button></a>
+<a href="full_output/PHAR.csv_full.html" target="content"><button>PHAR</button></a>
+<a href="full_output/PHYS.csv_full.html" target="content"><button>PHYS</button></a>
+<a href="full_output/PSYC.csv_full.html" target="content"><button>PSYC</button></a>
+<a href="full_output/SOCI.csv_full.html" target="content"><button>SOCI</button></a>
+<a href="full_output/VETE.csv_full.html" target="content"><button>VETE</button></a>
+
+        </div>
+        <iframe name="content" width="100%"></iframe>
+        <script>
+            const buttons = document.querySelectorAll('button');
+            buttons.forEach((button, i) => {
+                button.addEventListener('click', () => {
+                    buttons.forEach((b) => b.classList.remove('active'));
+                    button.classList.add('active');
+                });
+            });
+            
+            buttons[0].click();
+        </script>
+    </body>
+    </html>
+    
