@@ -7,3 +7,10 @@
 - faire le jaccard sur mds
 - faire les jaccard pour tout 
 - comment faire la projection de mds en 2 dimentions avec plotly
+
+
+================
+
+
+- compter le nombre de journaux avec une distance a 1 de tout les autres journaux 
+    - et au nombre de publication correspondantes, et le nombre d' auteurs 
