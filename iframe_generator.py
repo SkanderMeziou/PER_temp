@@ -57,6 +57,8 @@ for csv_file in input_dir.glob('*.csv'):
     gauge = plotly_output / f'{base}.html'
     pie1 = plotly_output / f'{base}_DistribClean.html'
     pie2 = plotly_output / f'{base}_DistribUnclean.html'
+    #jaccard = path-to-jaccard
+    #productivity_distrib = path-to-productivity-distrib
 
     with open(full_output / f'{base}_full.html', 'w') as f:
         f.write(f"""
@@ -82,8 +84,14 @@ for csv_file in input_dir.glob('*.csv'):
                 <div style="display: flex; flex-direction: row; height: 100vh">
                     <iframe src="{pie1}" width="50%" height="100%"></iframe>
                     <iframe src="{pie2}" width="50%" height="100%"></iframe>
-                </div>
-            </div>
+                </div>"""
+                # <div>
+                #     <iframe src="{jaccard}" width="100%" height="100%"></iframe>
+                # <div>
+                # <div>
+                #     <iframe src="{productivity_distrib}" width="100%" height="100%"></iframe>
+                # <div>
+            """</div>
         </body>
         </html>
         """)
