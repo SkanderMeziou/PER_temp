@@ -57,7 +57,7 @@ for csv_file in input_dir.glob('*.csv'):
     gauge = plotly_output / f'{base}.html'
     pie1 = plotly_output / f'{base}_DistribClean.html'
     pie2 = plotly_output / f'{base}_DistribUnclean.html'
-    #jaccard = path-to-jaccard
+    jaccard = plotly_output/f'../../results/jaccard_clean_{base}_pie.html'
     #productivity_distrib = path-to-productivity-distrib
 
     with open(full_output / f'{base}_full.html', 'w') as f:
