@@ -54,10 +54,11 @@ with open(full_output / 'index.html', 'w') as f:
 
 for csv_file in input_dir.glob('*.csv'):
     base = csv_file.name
+    discipline = csv_file.stem
     gauge = plotly_output / f'{base}.html'
     pie1 = plotly_output / f'{base}_DistribClean.html'
     pie2 = plotly_output / f'{base}_DistribUnclean.html'
-    jaccard = plotly_output/f'../../results/jaccard_clean_{base}_pie.html'
+    jaccard = plotly_output/f'../../results/jaccard_clean_{discipline}_pie.html'
     #productivity_distrib = path-to-productivity-distrib
 
     with open(full_output / f'{base}_full.html', 'w') as f:
@@ -84,10 +85,10 @@ for csv_file in input_dir.glob('*.csv'):
                 <div style="display: flex; flex-direction: row; height: 100vh">
                     <iframe src="{pie1}" width="50%" height="100%"></iframe>
                     <iframe src="{pie2}" width="50%" height="100%"></iframe>
+                </div>
+                <div>
+                     <iframe src="{jaccard}" width="100%" height="100%"></iframe>
                 </div>"""
-                # <div>
-                #     <iframe src="{jaccard}" width="100%" height="100%"></iframe>
-                # <div>
                 # <div>
                 #     <iframe src="{productivity_distrib}" width="100%" height="100%"></iframe>
                 # <div>

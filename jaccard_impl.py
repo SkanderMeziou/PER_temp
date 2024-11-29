@@ -8,7 +8,7 @@ print("initializing..")
 # Fonction pour obtenir la liste des auteurs pour chaque ISSN
 def get_authors_by_issn(df):
     df['author_list'] = df['author_info'].apply(lambda x: eval(x) if pd.notnull(x) else [])
-    df['authors'] = df['author_list'].apply(lambda x: {d['authname'] for d in x})
+    df['authors'] = df['author_list'].apply(lambda x: {d['authid'] for d in x})
     issn_authors_map = df.groupby('prism:issn')['authors'].apply(lambda x: set.union(*x)).to_dict()
     return issn_authors_map
 
