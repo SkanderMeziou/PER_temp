@@ -9,7 +9,7 @@ full_output = count_dir / 'full_output'
 
 full_output.mkdir(parents=True, exist_ok=True)
 
-with open(full_output / 'index.html', 'w') as f:
+with open('index.html', 'w') as f:
     f.write("""
     <html>
     <head>
@@ -96,10 +96,10 @@ for csv_file in input_dir.glob('*.csv'):
         </body>
         </html>
         """)
-        with open(full_output / 'index.html', 'a') as index:
-            index.write(f'<a href="full_output/{base}_full.html" target="content"><button>{csv_file.stem}</button></a>\n')
+        with open('index.html', 'a') as index:
+            index.write(f'<a href="detailed_counts/full_output/{base}_full.html" target="content"><button>{csv_file.stem}</button></a>\n')
 
-with open(full_output / 'index.html', 'a') as f:
+with open('index.html', 'a') as f:
     f.write("""
         </div>
         <iframe name="content" width="100%"></iframe>
