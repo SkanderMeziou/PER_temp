@@ -3,7 +3,7 @@ import random
 import pandas as pd
 
 # Charger le CSV
-df = pd.read_csv('./data/scopus/PHYS.csv')  # Remplace par ton fichier réel
+#df = pd.read_csv('./data/scopus/PHYS.csv')  # Remplace par ton fichier réel
 print("initializing..")
 # Fonction pour obtenir la liste des auteurs pour chaque ISSN
 def get_authors_by_issn(df):
@@ -11,6 +11,50 @@ def get_authors_by_issn(df):
     df['authors'] = df['author_list'].apply(lambda x: {d['authid'] for d in x})
     issn_authors_map = df.groupby('prism:issn')['authors'].apply(lambda x: set.union(*x)).to_dict()
     return issn_authors_map
+
+def get_authors_by_eissn(df):
+    df['author_list'] = df['author_info'].apply(lambda x: eval(x) if pd.notnull(x) else [])
+    df['authors'] = df['author_list'].apply(lambda x: {d['authid'] for d in x})
+    eissn_authors_map = df.groupby('prism:eIssn')['authors'].apply(lambda x: set.union(*x)).to_dict()
+    return eissn_authors_map
+
+
+def get_authors_map_with_validation(df):
+    # Étape 1 : Extraire les informations sur les auteurs
+    df['author_list'] = df['author_info'].apply(lambda x: eval(x) if pd.notnull(x) else [])
+    df['authors'] = df['author_list'].apply(lambda x: {d['authid'] for d in x})
+    
+    # Étape 2 : Construire les mappages ISSN et eISSN
+    issn_authors_map = df.groupby('prism:issn')['authors'].apply(lambda x: set.union(*x)).to_dict()
+    eissn_authors_map = df.groupby('prism:eIssn')['authors'].apply(lambda x: set.union(*x)).to_dict()
+    
+    # Étape 3 : Construire une map combinée (couples ISSN/eISSN)
+    combined_map = {}
+    for _, row in df.iterrows():
+        issn = row['prism:issn']
+        eissn = row['prism:eIssn']
+        authors = row['authors']
+        
+        if (issn, eissn) not in combined_map:
+            combined_map[(issn, eissn)] = set()
+        combined_map[(issn, eissn)].update(authors)
+    
+    # Étape 4 : Vérification des conflits entre ISSN et eISSN
+    conflicts = []
+    grouped_by_issn = df.groupby('prism:issn')['prism:eIssn'].unique()
+    for issn, eissns in grouped_by_issn.items():
+        if len(eissns) > 1:
+            conflicts.append((issn, eissns))
+    
+    # Étape 5 : Afficher les conflits
+    if conflicts:
+        print("Conflits détectés (même ISSN avec plusieurs eISSN) :")
+        for issn, eissns in conflicts:
+            print(f"ISSN: {issn} a plusieurs eISSN associés : {list(eissns)}")
+    else:
+        print("Aucun conflit détecté entre ISSN et eISSN.")
+    
+    return combined_map
 
 # Fonction pour calculer la distance de Jaccard
 def jaccard_distance(set1, set2):
