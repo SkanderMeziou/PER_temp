@@ -130,6 +130,6 @@ def analyze_every_issn(df):
     return distances
 
 
-# Exemple d'appel de la fonction
+"""# Exemple d'appel de la fonction
 print("c'est parti pour le calcul !")
-distances = analyze_every_issn(df)
+distances = analyze_every_issn(df)"""

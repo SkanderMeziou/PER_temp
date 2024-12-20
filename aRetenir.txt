@@ -20,9 +20,11 @@ temps implementé seul : les deux million ont été realisée en deux minutes
 - enlever l'issn 03029743
 - essayer les deux jaccard index sur des petis exemples
 - faire l'embedding pour une discipline ( comp )
-- ajouter la discipline et recacluler la distance de jaccard 
+- ajouter la discipline et recacluler la distance de jaccard => ok
 - connaitre le nombre de publications dans chaque journal ( 0 , 1 ,2 ,etc )
 - enlever les journaux avec que 1 ou 2 publications peut etre
 
 observations : 
-les deux journaux 
+les deux journaux 10637109 et 10816011 ont été observé avec une distance de 0 et une seule ublication, il s'est averé en observant sur scopus que c'est en realité le meme journal qui a changé de nom. la publication a été enregistrée sous les deux journaux meme si en realité c'est un seul et meme journal qui a changé de nom 
+-> peut etre d'autres cas comme ca 
+-> faut il utiliser un modele d'ia ? que faut il faire :/ ? 
