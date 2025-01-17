@@ -2,6 +2,7 @@
 import os
 import pandas as pd
 import numpy as np
+import time
 from jaccard_impl import get_authors_by_issn, jaccard_distance
 
 # Dossier contenant les fichiers clean_*.csv
@@ -38,6 +39,9 @@ def compute_jaccard_matrix(file_path):
     # Convertir en DataFrame pour faciliter l'analyse
     distance_df = pd.DataFrame(distance_matrix, index=issn_list, columns=issn_list)
     return distance_df
+
+# Mesure du temps d'exécution global
+start_time = time.time()
 
 # Calculer la matrice de Jaccard pour chaque fichier
 output_folder = './jaccardIndex'
@@ -87,3 +91,14 @@ overall_distance_df = pd.DataFrame(overall_distance_matrix, index=overall_issn_l
 overall_output_file = os.path.join(output_folder, 'jaccard_overall.csv')
 overall_distance_df.to_csv(overall_output_file)
 print(f"Matrice globale sauvegardée dans : {overall_output_file}")
+
+# Mesure du temps final
+end_time = time.time()
+execution_time = end_time - start_time
+
+# Enregistrer le temps d'exécution dans un fichier
+time_file = os.path.join(output_folder, 'time.txt')
+with open(time_file, 'w') as f:
+    f.write(f"Time for jaccard matrix creation: {execution_time:.2f} seconds\n")
+
+print(f"Temps d'exécution enregistré dans : {time_file}")
