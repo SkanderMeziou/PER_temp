@@ -51,7 +51,7 @@ overall_issn_authors_map = {}
 
 for file in files:
     file_path = os.path.join(data_folder, file)
-    print(f"Calcul de la matrice pour {file}...")
+    print(f"Calcul de la matrice pour {file} ...")
 
     # Calculer la matrice pour le fichier
     distance_df = compute_jaccard_matrix(file_path)
